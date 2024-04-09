@@ -84,7 +84,6 @@ input[type=submit] {
 .section-amazing {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     text-align: center;
     align-items: center;
     background-color: rgba(232,217,217,.3);
@@ -128,10 +127,12 @@ input[type=submit] {
 
 .section-open-source {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    padding: 30px;
 }
 
 .section-open-source__image {
@@ -140,9 +141,15 @@ input[type=submit] {
 
 .section-open-source__title {
     font-size: 2rem;
+    background-color:rgba(255,204,53,.4);
+    transform: skew(9deg,0deg);
+    font-style: italic;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .section-open-source__description {
     text-align: center;
     width: 60%;
+    margin: 0 auto;
 }
