@@ -82,9 +82,14 @@ input[type=submit] {
 }
 
 .section-amazing {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    background-color: rgba(0,0,0,.05);
+    align-items: center;
+    background-color: rgba(232,217,217,.3);
     padding: 30px;
+    height: 600px;
 }
 
 .section-amazing__title {
@@ -101,10 +106,24 @@ input[type=submit] {
 
 .section-amazing__links {
     display: flex;
-    justify-content: space-between;
-    width: 40%;
+    justify-content: center;
+    gap: 2rem;
     margin: 0 auto;
     margin-top: 1rem;
+}
+
+.link-see-plans {
+    background-color: #FB3B49;
+    padding: 15px;
+    width: 150px;
+    box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+}
+
+.link-join-free {
+    background-color: white;
+    padding: 15px;
+    width: 150px;
+
 }
 
 .section-open-source {
