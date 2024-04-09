@@ -33,19 +33,51 @@ a {
     margin-right: 1rem;
 }
 
+.topSearch {
+    padding: 0.5rem;
+}
+
 .npmLogo {
     width: 150px;
 }
 
+.searchForm {
+    display: flex;
+}
+
+/** Al search form todos sus hijos input les vamos a poner los siguientes diseño */
+.searchForm > input {
+    padding: 1rem; /**1rem en cuatro direcciones */
+    border: none;
+}
+
+/** como es un elemento tipo id ponemos el # */ 
+#package-name {
+    background-color: rgba(0,0,0,.05); 
+    width: 350px;
+}
+
+/** todos lo sinputs que tienen el atributo type con el valor submit deberia tener ese estilo */
+input[type=submit] {
+    background-color: #fb3e44;
+    color: white;
+}
+
 .loginLinks {
     display: flex;
+    align-items: center;
     gap: 1rem;
+    
 }
 
 .loginLinks>a {
     color: rgba(0, 0, 0, .7);
+    padding: 0.4rem 1 rem; /** 0.4rem arriba y abajo de cada enlane y 1rem izquierda y derecha de cada enlance */
 }
 
+/** */
 .loginLinks__join {
     border: 1px solid rgba(0, 0, 0, .7);
+    padding: 1rem;
 }
+
